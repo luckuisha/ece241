@@ -1,12 +1,11 @@
-module aluthing(input [9:0]SW, input [2:0]KEY, output [6:0]HEX0,output [6:0]HEX1,output [6:0]HEX2,output [6:0]HEX3,output [6:0]HEX4,output [6:0]HEX5);
-	wire [7:0] pickle;
-	ALU u0 (SW[7:4], SW[3:0], ~KEY[2:0], pickle);
+module aluthing(input [9:0]SW, input [2:0]KEY, output [6:0]HEX0,output [6:0]HEX1,output [6:0]HEX2,output [6:0]HEX3,output [6:0]HEX4,output [6:0]HEX5, output [7:0]LEDR);
+	ALU u0 (SW[7:4], SW[3:0], ~KEY[2:0], LEDR[7:0]);
 	display u1 (SW[7:4], HEX2[6:0]);
 	display u2 (SW[3:0], HEX0[6:0]);
 	display u3 (4'b0000, HEX1[6:0]);
 	display u4 (4'b0000, HEX3[6:0]);
-	display u5 (pickle[3:0], HEX4[6:0]);
-	display u6 (pickle[7:4], HEX5[6:0]);
+	display u5 (LEDR[3:0], HEX4[6:0]);
+	display u6 (LEDR[7:4], HEX5[6:0]);
 endmodule
 
 module ALU(input [3:0]A, input[3:0]B,input [2:0]KEY, output reg [7:0]ALUout);
@@ -19,12 +18,13 @@ module ALU(input [3:0]A, input[3:0]B,input [2:0]KEY, output reg [7:0]ALUout);
 		case (KEY)
 			3'b000: ALUout = {3'b000, w[4:0]};
 			3'b001: ALUout[4:0] = A + B;
-//			3'b010: ALUout = {~(A&B),~(A|B)};
-//			3'b011: if (A||B) ALUout[7:0] = 8'b11000000;
-//			3'b100: if (((B[0] & B[1] & B[2] & ~B[3]) | (B[0] & B[1] & ~B[2] & B[3]) | (B[0] & ~B[1] & B[2] & B[3]) | (~B[0] & B[1] & B[2] & B[3])) & 
-//			((~A[0]&~A[1]&A[2]&A[3])|(A[0]&~A[1]&~A[2]&A[3])|(~A[0]&A[1]&~A[2]&A[3])|(~A[0]&A[1]&A[2]&~A[3])|(A[0]&~A[1]&A[2]&~A[3])|(A[0]&A[1]&~A[2]&~A[3]))) ALUout[7:0] = 8'b00111111;
-//			3'b101: ALUout[7:0] = {A,B};
-//			3'b110: ALUout = {A^B ,A~^B};
+			3'b010: ALUout = {~(A&B),~(A|B)};
+			3'b011: if (A||B) 
+						ALUout[7:0] = 8'b11000000;
+			3'b100: if (((B[0] & B[1] & B[2] & ~B[3]) | (B[0] & B[1] & ~B[2] & B[3]) | (B[0] & ~B[1] & B[2] & B[3]) | (~B[0] & B[1] & B[2] & B[3])) & ((~A[0]&~A[1]&A[2]&A[3])|(A[0]&~A[1]&~A[2]&A[3])|(~A[0]&A[1]&~A[2]&A[3])|(~A[0]&A[1]&A[2]&~A[3])|(A[0]&~A[1]&A[2]&~A[3])|(A[0]&A[1]&~A[2]&~A[3])))
+						ALUout[7:0] = 8'b00111111;
+			3'b101: ALUout[7:0] = {A,B};
+			3'b110: ALUout = {A^B ,A~^B};
 			default: ALUout [7:0] = 8'b00000000;
 		endcase
 	end
@@ -40,18 +40,22 @@ endmodule
 	
 
 module adder(input b, a, ci, output co, s);
-	assign co = ((b | a | ~ci ) & (b | ~a | ci ) & (~b | a | ci ) & (b | a | ci ));
-	assign s = ((b | a | ci ) & (b | ~a | ~ci ) & (~b | a | ~ci ) & (~b | ~a | ci ));
+	//assign co = ((b | a | ~ci ) & (b | ~a | ci ) & (~b | a | ci ) & (b | a | ci ));
+	//assign s = ((b | a | ci ) & (b | ~a | ~ci ) & (~b | a | ~ci ) & (~b | ~a | ci ));
+	assign co = ((a^b)&ci)|(a&b);
+	assign s = ((a^b)^ci);
 endmodule
 
-module display(input [9:0]SW, output [6:0]HEX0);
 
-	assign HEX0[0] = ~((SW[0] | SW[1] | SW[2] | ~SW[3]) & (SW[0] | ~SW[1] | SW[2] | SW[3]) & (~SW[0] | SW[1] | ~SW[2] | ~SW[3]) & (~SW[0] | ~SW[1] | SW[2] | ~SW[3]));
-	assign HEX0[1] = ~((SW[0] | ~SW[1] | SW[2] | ~SW[3]) & (SW[0] | ~SW[1] | ~SW[2] | SW[3]) & (~SW[0] | SW[1] | ~SW[2] | ~SW[3]) & (~SW[0] | ~SW[1] | SW[2] | SW[3]) & (~SW[0] | ~SW[1] | ~SW[2] | ~SW[3]) & (~SW[0] | ~SW[1] | ~SW[2] | SW[3]));
-	assign HEX0[2] = ~((SW[0] | SW[1] | ~SW[2] | SW[3]) & (~SW[0] | ~SW[1] | SW[2] | SW[3]) & (~SW[0] | ~SW[1] | ~SW[2] | SW[3]) & (~SW[0] | ~SW[1] | ~SW[2] | ~SW[3]));
-	assign HEX0[3] = ~((SW[0] | SW[1] | SW[2] | ~SW[3]) & (SW[0] | ~SW[1] | SW[2] | SW[3]) & (SW[0] | ~SW[1] | ~SW[2] | ~SW[3]) & (~SW[0] | SW[1] | ~SW[2] | SW[3]) & (~SW[0] | ~SW[1] | ~SW[2] | ~SW[3]));
-	assign HEX0[4] = ~((SW[0] | SW[1] | SW[2] | ~SW[3]) & (SW[0] | ~SW[1] | ~SW[2] | ~SW[3]) & (SW[0] | SW[1] | ~SW[2] | ~SW[3]) & (SW[0] | ~SW[1] | SW[2] | SW[3]) & (SW[0] | ~SW[1] | SW[2] | ~SW[3]) & (~SW[0] | SW[1] | SW[2] | ~SW[3]));
-	assign HEX0[5] = ~((SW[0] | SW[1] | SW[2] | ~SW[3]) & (SW[0] | SW[1] | ~SW[2] | ~SW[3]) & (SW[0] | SW[1] | ~SW[2] | SW[3]) & (SW[0] | ~SW[1] | ~SW[2] | ~SW[3]) & (~SW[0] | ~SW[1] | SW[2] | ~SW[3]));
-	assign HEX0[6] = ~((SW[0] | SW[1] | SW[2] | SW[3]) & (SW[0] | SW[1] | SW[2] | ~SW[3]) & (SW[0] | ~SW[1] | ~SW[2] | ~SW[3]) & (~SW[0] | ~SW[1] | SW[2] | SW[3]));
+module display(input [3:0]SW,output [6:0]HEX);
 
-endmodule
+ assign HEX[0]= (~SW[3]&~SW[2]&~SW[1]&SW[0])+(~SW[3]&SW[2]&~SW[1]&~SW[0])+(SW[3]&~SW[2]&SW[1]&SW[0])+(SW[3]&SW[2]&~SW[1]&SW[0]);
+ assign HEX[1]=(~SW[3]&SW[2]&~SW[1]&SW[0])+(~SW[3]&SW[2]&SW[1]&~SW[0])+(SW[3]&~SW[2]&SW[1]&SW[0])+(SW[3]&SW[2]&~SW[1]&~SW[0])+(SW[3]&SW[2]&SW[1]&~SW[0])+(SW[3]&SW[2]&SW[1]&SW[0]);
+ assign HEX[2]=(~SW[3]&~SW[2]&SW[1]&~SW[0])+(SW[3]&SW[2]&~SW[1]&~SW[0])+(SW[3]&SW[2]&SW[1]&~SW[0])+(SW[3]&SW[2]&SW[1]&SW[0]);
+ assign HEX[3]=(~SW[3]&~SW[2]&~SW[1]&SW[0])+(~SW[3]&SW[2]&~SW[1]&~SW[0])+(~SW[3]&SW[2]&SW[1]&SW[0])+(SW[3]&~SW[2]&SW[1]&~SW[0])+(SW[3]&SW[2]&SW[1]&SW[0]);
+ assign HEX[4]=(~SW[3]&~SW[2]&~SW[1]&SW[0])+(~SW[3]&~SW[2]&SW[1]&SW[0])+(~SW[3]&SW[2]&~SW[1]&~SW[0])+(~SW[3]&SW[2]&~SW[1]&SW[0])+(~SW[3]&SW[2]&SW[1]&SW[0])+(SW[3]&~SW[2]&~SW[1]&SW[0]);
+ assign HEX[5]=(~SW[3]&~SW[2]&~SW[1]&SW[0])+(~SW[3]&~SW[2]&SW[1]&~SW[0])+(~SW[3]&~SW[2]&SW[1]&SW[0])+(~SW[3]&SW[2]&SW[1]&SW[0])+(SW[3]&SW[2]&~SW[1]&SW[0]);
+ assign HEX[6]=(~SW[3]&~SW[2]&~SW[1]&SW[0])+(~SW[3]&SW[2]&SW[1]&SW[0])+(SW[3]&SW[2]&~SW[1]&~SW[0])+(~SW[3]&~SW[2]&~SW[1]&~SW[0]);
+
+ endmodule
+
