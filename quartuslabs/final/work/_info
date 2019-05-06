@@ -1,0 +1,131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/final
+vball
+Z1 !s110 1541826567
+!i10b 1
+!s100 mk80CQUI4:kRN>^g=>jVe0
+IFFL5d90>boK3d2MJMQgWX1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1541826562
+Z4 8aiball.v
+Z5 Faiball.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1541826567.000000
+Z8 !s107 aiball.v|
+Z9 !s90 -reportprogress|300|aiball.v|
+!i113 1
+Z10 tCvgOpt 0
+vcontrol
+R1
+!i10b 1
+!s100 K<QM8XVl61Y]Hzd<3P4B]2
+IJ9N>HPJD`1R=A@Q@=bE9@2
+R2
+R0
+R3
+R4
+R5
+L0 144
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdatapath
+R1
+!i10b 1
+!s100 3214_Ajce4mDbl[NUfjHD2
+I;95TGdbj58HE<=N9jS7XR3
+R2
+R0
+R3
+R4
+R5
+L0 569
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vhex_decoder
+R1
+!i10b 1
+!s100 aSfZQgkji3U]o[kQ8]L9B3
+IQPUehC=ME@QF48kibP1ia1
+R2
+R0
+R3
+R4
+R5
+L0 803
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vlfsr_counter
+R1
+!i10b 1
+!s100 RE9eQESIO:HM5@hOKYKNG1
+Il<m4S]lD82ldeL>KllI5j1
+R2
+R0
+R3
+R4
+R5
+L0 778
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vnoobChamp
+R1
+!i10b 1
+!s100 gFKTVb3;JbldLY=jmejjn1
+IMcJD69oza?LIjFNj5?e9Y1
+R2
+R0
+R3
+R4
+R5
+L0 106
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+nnoob@champ

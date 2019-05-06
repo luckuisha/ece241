@@ -1,0 +1,186 @@
+|counter
+SW[0] => SW[0].IN8
+SW[1] => SW[1].IN1
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+HEX0[0] << display:u8.port1
+HEX0[1] << display:u8.port1
+HEX0[2] << display:u8.port1
+HEX0[3] << display:u8.port1
+HEX0[4] << display:u8.port1
+HEX0[5] << display:u8.port1
+HEX0[6] << display:u8.port1
+HEX1[0] << display:u9.port1
+HEX1[1] << display:u9.port1
+HEX1[2] << display:u9.port1
+HEX1[3] << display:u9.port1
+HEX1[4] << display:u9.port1
+HEX1[5] << display:u9.port1
+HEX1[6] << display:u9.port1
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+
+
+|counter|flipflop:u0
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|flipflop:u1
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|flipflop:u2
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|flipflop:u3
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|flipflop:u4
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|flipflop:u5
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|flipflop:u6
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|flipflop:u7
+t => w.IN1
+clear => q.OUTPUTSELECT
+clock => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|display:u8
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+HEX[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add9.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add13.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add18.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add22.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= Add25.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|display:u9
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+HEX[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= Add6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= Add9.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= Add13.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= Add18.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= Add22.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= Add25.DB_MAX_OUTPUT_PORT_TYPE
+
+

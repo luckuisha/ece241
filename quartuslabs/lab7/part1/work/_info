@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/lab7/part1
+vhex_decoder
+Z1 !s110 1541182163
+!i10b 1
+!s100 84^lY3^7;5o>2`FQ9eYPJ1
+Ib534[7GHA=8`8D:KDS3>51
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1541120029
+Z4 8top.v
+Z5 Ftop.v
+L0 13
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1541182162.000000
+Z8 !s107 ram32x4_bb.v|ram32x4.v|top.v|
+Z9 !s90 -reportprogress|300|top.v|ram32x4.v|ram32x4_bb.v|
+!i113 1
+Z10 tCvgOpt 0
+vram32x4
+R1
+!i10b 1
+!s100 zfT_S@cKT37T[Fh>08<Ia1
+IUaXNSE0`TSYeWA]QOmQKL2
+R2
+R0
+w1541119388
+8ram32x4_bb.v
+Fram32x4_bb.v
+L0 34
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vtop
+R1
+!i10b 1
+!s100 6cE[UzcCFFgE>;z;SO6]z3
+IkVGh[jXU9dBY5ilB109GO1
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

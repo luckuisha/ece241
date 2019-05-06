@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/lab5/part3
+vaccess
+Z1 !s110 1539918263
+!i10b 1
+!s100 4KCeZk>:nODVXicV:[h5=0
+IRe09AebJP@fHV3A`egJ3R3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1539918159
+Z4 8morse.v
+Z5 Fmorse.v
+L0 81
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1539918262.000000
+Z8 !s107 morse.v|
+Z9 !s90 -reportprogress|300|morse.v|
+!i113 1
+Z10 tCvgOpt 0
+vletter
+R1
+!i10b 1
+!s100 2CR`HMGm=<6g_9giAPK2a2
+I6Yf?VTOzjOX4<TBCTGAcL0
+R2
+R0
+R3
+R4
+R5
+L0 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmorse
+R1
+!i10b 1
+!s100 ezbDlhYNI5[JEIJdLmlJ?1
+IbE9Ed`UKV5b[:1mA:4]NF1
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vshifter
+R1
+!i10b 1
+!s100 [hWa_c:kP2P50GD?<zS`n0
+II2jb]?g7``20_JFhP<md^3
+R2
+R0
+R3
+R4
+R5
+L0 59
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vthing
+R1
+!i10b 1
+!s100 FUVLOEd@6aV[KA7lhLT`B1
+I]V`ig?O2@RfU?H?4<]0[;1
+R2
+R0
+R3
+R4
+R5
+L0 7
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

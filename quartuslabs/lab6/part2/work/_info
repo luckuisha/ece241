@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/lab6/part2
+vcontrol
+Z1 !s110 1540670104
+!i10b 1
+!s100 0UQjaCOnSJCBg:VAkM?QA0
+IPSNl6QlCDIYooMRMDcnli2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1540583255
+Z4 8poly_function.v
+Z5 Fpoly_function.v
+L0 99
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1540670104.000000
+Z8 !s107 poly_function.v|
+Z9 !s90 -reportprogress|300|poly_function.v|
+!i113 1
+Z10 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 >2V^CVm@F:O2^dgcTQ0zl0
+I[S?S?g2gjG[4Ln`X;?9CN2
+R2
+R0
+R3
+R4
+R5
+L0 222
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vhex_decoder
+R1
+!i10b 1
+!s100 _eh[?eob3J<<4T`9bcN`<3
+I<XM?hfj4i]`ZaB^IXci001
+R2
+R0
+R3
+R4
+R5
+L0 319
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpart2
+R1
+!i10b 1
+!s100 R9VWiN;B]m8_N:kHUgA[61
+Ikk:Jj5hg:bMVDA7=FF2o`3
+R2
+R0
+R3
+R4
+R5
+L0 45
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpoly_function
+R1
+!i10b 1
+!s100 2YO;Lc1l@]a;m<26jn3^31
+Ik315HVn`=g=JM0UUYj2HH2
+R2
+R0
+R3
+R4
+R5
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

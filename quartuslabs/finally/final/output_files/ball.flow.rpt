@@ -1,0 +1,210 @@
+Flow report for ball
+Mon Nov 26 11:00:19 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Mon Nov 26 10:59:44 2018           ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                   ; ball                                            ;
+; Top-level Entity Name           ; ball                                            ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 1,980 / 32,070 ( 6 % )                          ;
+; Total registers                 ; 713                                             ;
+; Total pins                      ; 101 / 457 ( 22 % )                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 2,880,450 / 4,065,280 ( 71 % )                  ;
+; Total DSP Blocks                ; 2 / 87 ( 2 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1 / 6 ( 17 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/26/2018 10:54:39 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; ball                ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 167746773771637.154324766505424        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/cave/cave_rom.bsf     ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/cave/cave_rom_inst.v  ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/cave/cave_rom_bb.v    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/cave/cave_rom.inc     ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/cave/cave_rom.cmp     ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/main/main_rom.bsf     ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/main/main_rom_inst.v  ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/main/main_rom_bb.v    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/main/main_rom.inc     ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/backgrounds/main/main_rom.cmp     ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/drunk/drunk_rom.bsf          ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/drunk/drunk_rom_inst.v       ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/drunk/drunk_rom_bb.v         ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/drunk/drunk_rom.inc          ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/drunk/drunk_rom.cmp          ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/final/final_rom.bsf          ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/final/final_rom_inst.v       ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/final/final_rom_bb.v         ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/final/final_rom.inc          ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/final/final_rom.cmp          ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/mainchar/mainchar_rom.bsf    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/mainchar/mainchar_rom_inst.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/mainchar/mainchar_rom_bb.v   ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/mainchar/mainchar_rom.inc    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/char/mainchar/mainchar_rom.cmp    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_1.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_1_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_1_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_1.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_1.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_2.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_2_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_2_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_2.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_2.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_3.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_3_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_3_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_3.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_3.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_4.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_4_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_4_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_4.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_4.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_5.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_5_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_5_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_5.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_5.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_6.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_6_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_6_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_6.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtz_6.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_stage.bsf           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_stage_inst.v        ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_stage_bb.v          ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_stage.inc           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_stage.cmp           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtn_1.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtn_1_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtn_1_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtn_1.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txtn_1.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_n2.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_n2_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_n2_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_n2.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_n2.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_t1.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_t1_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_t1_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_t1.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_t1.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_d1.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_d1_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_d1_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_d1.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_d1.cmp              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_f1.bsf              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_f1_inst.v           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_f1_bb.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_f1.inc              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ROMS/txtboxall/txt_f1.cmp              ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:02:34     ; 1.0                     ; 811 MB              ; 00:01:09                           ;
+; Fitter               ; 00:01:40     ; 1.2                     ; 2721 MB             ; 00:03:04                           ;
+; Assembler            ; 00:00:18     ; 1.0                     ; 793 MB              ; 00:00:12                           ;
+; Timing Analyzer      ; 00:00:31     ; 1.7                     ; 1159 MB             ; 00:00:30                           ;
+; Total                ; 00:05:03     ; --                      ; --                  ; 00:04:55                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; BA3155WS15       ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; BA3155WS15       ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; BA3155WS15       ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; BA3155WS15       ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off ball -c ball
+quartus_fit --read_settings_files=off --write_settings_files=off ball -c ball
+quartus_asm --read_settings_files=off --write_settings_files=off ball -c ball
+quartus_sta ball -c ball
+
+
+

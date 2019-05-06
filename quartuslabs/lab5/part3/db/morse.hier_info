@@ -1,0 +1,304 @@
+|morse
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => ~NO_FANOUT~
+SW[3] => SW[3].IN1
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN1
+LEDR[0] <= thing:u0.port5
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|morse|thing:u0
+a => a.IN1
+b => b.IN1
+c => c.IN1
+clock => o~reg0.CLK
+clock => q.CLK
+clock => w[0].CLK
+clock => w[1].CLK
+clock => w[2].CLK
+clock => w[3].CLK
+clock => w[4].CLK
+clock => w[5].CLK
+clock => w[6].CLK
+clock => w[7].CLK
+clock => w[8].CLK
+clock => w[9].CLK
+clock => w[10].CLK
+clock => w[11].CLK
+clock => w[12].CLK
+clock => w[13].CLK
+clock => w[14].CLK
+clock => w[15].CLK
+clock => w[16].CLK
+clock => w[17].CLK
+clock => w[18].CLK
+clock => w[19].CLK
+clock => w[20].CLK
+clock => w[21].CLK
+clock => w[22].CLK
+clock => w[23].CLK
+clock => w[24].CLK
+clock => w[25].CLK
+clear_b => clear_b.IN1
+o <= o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|letter:u1
+a => Decoder0.IN2
+b => Decoder0.IN1
+b => Decoder1.IN1
+c => Decoder0.IN0
+c => Decoder1.IN0
+out[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[9] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= <VCC>
+out[11] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= <VCC>
+out[13] <= <GND>
+
+
+|morse|thing:u0|access:u2
+Clock => Clock.IN14
+reset => reset.IN14
+parallelLoadn => parallelLoadn.IN14
+rotateRight => rotateRight.IN14
+lsRight => always0.IN0
+DATA_IN[0] => DATA_IN[0].IN1
+DATA_IN[1] => DATA_IN[1].IN1
+DATA_IN[2] => DATA_IN[2].IN1
+DATA_IN[3] => DATA_IN[3].IN1
+DATA_IN[4] => DATA_IN[4].IN1
+DATA_IN[5] => DATA_IN[5].IN1
+DATA_IN[6] => DATA_IN[6].IN1
+DATA_IN[7] => DATA_IN[7].IN1
+DATA_IN[8] => DATA_IN[8].IN1
+DATA_IN[9] => DATA_IN[9].IN1
+DATA_IN[10] => DATA_IN[10].IN1
+DATA_IN[11] => DATA_IN[11].IN1
+DATA_IN[12] => DATA_IN[12].IN1
+DATA_IN[13] => DATA_IN[13].IN1
+q[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u3
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u4
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u5
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u6
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u7
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u8
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u9
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u10
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u11
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u12
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u13
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u14
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u15
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|morse|thing:u0|access:u2|shifter:u16
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+Clock => w[0].CLK
+Clock => w[1].CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

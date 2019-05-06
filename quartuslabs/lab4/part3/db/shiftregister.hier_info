@@ -1,0 +1,139 @@
+|shiftregister
+KEY[0] => _.IN1
+KEY[1] => _.IN1
+KEY[2] => _.IN1
+KEY[3] => _.IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => ~NO_FANOUT~
+SW[9] => SW[9].IN1
+LEDR[0] <= access:u0.port6
+LEDR[1] <= access:u0.port6
+LEDR[2] <= access:u0.port6
+LEDR[3] <= access:u0.port6
+LEDR[4] <= access:u0.port6
+LEDR[5] <= access:u0.port6
+LEDR[6] <= access:u0.port6
+LEDR[7] <= access:u0.port6
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|shiftregister|access:u0
+Clock => Clock.IN8
+reset => reset.IN8
+parallelLoadn => parallelLoadn.IN8
+rotateRight => rotateRight.IN8
+lsRight => always0.IN0
+DATA_IN[0] => DATA_IN[0].IN1
+DATA_IN[1] => DATA_IN[1].IN1
+DATA_IN[2] => DATA_IN[2].IN1
+DATA_IN[3] => DATA_IN[3].IN1
+DATA_IN[4] => DATA_IN[4].IN1
+DATA_IN[5] => DATA_IN[5].IN1
+DATA_IN[6] => DATA_IN[6].IN1
+DATA_IN[7] => DATA_IN[7].IN1
+q[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u1
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u2
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u3
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u4
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u5
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u6
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u7
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shiftregister|access:u0|shifter:u8
+left => w.DATAB
+right => w.DATAA
+loadLeft => w.OUTPUTSELECT
+d => w.DATAA
+loadn => w.OUTPUTSELECT
+Clock => q~reg0.CLK
+reset => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

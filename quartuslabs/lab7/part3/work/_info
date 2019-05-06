@@ -1,0 +1,150 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/lab7/part3
+vball
+Z1 !s110 1541436898
+!i10b 1
+!s100 F8_I8c<EaeAKa8=faehdY0
+Ik4iV_Zl;IQjjZh_fzR[2a3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1541436488
+Z4 8ball.v
+Z5 Fball.v
+L0 11
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1541436898.000000
+Z8 !s107 vga_adapter/vga_pll.v|vga_adapter/vga_controller.v|vga_adapter/vga_address_translator.v|vga_adapter/vga_adapter.v|vgaPll.v|vga_controller.v|vga_address_translator.v|vga_adapter.v|ball.v|
+Z9 !s90 -reportprogress|300|ball.v|vga_adapter.v|vga_address_translator.v|vga_controller.v|vgaPll.v|
+!i113 1
+Z10 tCvgOpt 0
+vcontrol
+R1
+!i10b 1
+!s100 ci>?:J2J<eCVWjG_O1^>Q3
+I2c3D`l5P9T?41HJEd^ZzR0
+R2
+R0
+R3
+R4
+R5
+L0 109
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vdatapath
+R1
+!i10b 1
+!s100 fW4BEJiKikTK12ano6H772
+I`E<ELA<?CTOhdRBoaB`:I3
+R2
+R0
+R3
+R4
+R5
+L0 312
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vvga_adapter
+R1
+!i10b 1
+!s100 PR75O15I9dVSi8B4<g5Zb3
+Ij3?UFI>T<TT<XV]g<@_TH2
+R2
+R0
+Z11 w1541436523
+8vga_adapter.v
+Fvga_adapter.v
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vvga_address_translator
+R1
+!i10b 1
+!s100 `K`RWO2nRBN_9O[2kR2lY0
+ISLAi:]<6mKHeBkkaO1DFh3
+R2
+R0
+R11
+8vga_address_translator.v
+Fvga_address_translator.v
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vvga_controller
+R1
+!i10b 1
+!s100 XbjY46ZEO<fXm::1SHFVi0
+IGX7D@am`LFn0fOEYnA?N13
+R2
+R0
+R11
+8vga_controller.v
+Fvga_controller.v
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vvga_pll
+R1
+!i10b 1
+!s100 4XSTjD`VEiamX^n1@5J`b3
+IZea[l[N44f];L>G1k=DX[2
+R2
+R0
+R11
+8vga_adapter/vga_pll.v
+Fvga_adapter/vga_pll.v
+L0 36
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

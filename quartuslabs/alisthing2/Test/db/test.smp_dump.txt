@@ -1,0 +1,23 @@
+
+State Machine - |test|control:c0|current_state_all
+Name current_state_all.GAME_CYCLE_DRAWBG current_state_all.PONG_CYCLE_GAMEOVER current_state_all.PONG_CYCLE_PAUSE current_state_all.PONG_CYCLE_SCORE current_state_all.PONG_CYCLE_DELETE current_state_all.PR_CYCLE_C current_state_all.PR_CYCLE_M current_state_all.PR_CYCLE_X current_state_all.PR_CYCLE_D current_state_all.PL_CYCLE_C current_state_all.PL_CYCLE_M current_state_all.PL_CYCLE_X current_state_all.PL_CYCLE_D current_state_all.PONG_CYCLE_WAIT current_state_all.B_CYCLE_C current_state_all.B_CYCLE_M current_state_all.B_CYCLE_X current_state_all.B_CYCLE_D current_state_all.PONG_CYCLE_START_WAIT current_state_all.PONG_CYCLE_START 
+current_state_all.PONG_CYCLE_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state_all.PONG_CYCLE_START_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state_all.B_CYCLE_D 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state_all.B_CYCLE_X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state_all.B_CYCLE_M 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state_all.B_CYCLE_C 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state_all.PONG_CYCLE_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state_all.PL_CYCLE_D 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state_all.PL_CYCLE_X 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state_all.PL_CYCLE_M 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state_all.PL_CYCLE_C 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PR_CYCLE_D 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PR_CYCLE_X 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PR_CYCLE_M 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PR_CYCLE_C 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PONG_CYCLE_DELETE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PONG_CYCLE_SCORE 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PONG_CYCLE_PAUSE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.PONG_CYCLE_GAMEOVER 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_all.GAME_CYCLE_DRAWBG 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

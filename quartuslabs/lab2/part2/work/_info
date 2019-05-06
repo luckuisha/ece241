@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/lab2/part2
+vmux2to1v
+Z1 !s110 1537799140
+!i10b 1
+!s100 T^=Tz4<_j?kP>4aIB9ER23
+I3U]UjzQhZb43a5R<0JnGc0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1537797739
+Z4 8mux2to1v.v
+Z5 Fmux2to1v.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1537799140.000000
+Z8 !s107 mux2to1v.v|
+Z9 !s90 -reportprogress|300|mux2to1v.v|
+!i113 1
+Z10 tCvgOpt 0
+vv7404
+R1
+!i10b 1
+!s100 01nh2U:N<CQ=`N7c74n]M2
+I5P99oLBT7M5EkE[B??kd=0
+R2
+R0
+R3
+R4
+R5
+L0 12
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vv7408
+R1
+!i10b 1
+!s100 5HXQRRVKO;_e3=dblemjX2
+IgY^?E;3nack?WW]cTLK583
+R2
+R0
+R3
+R4
+R5
+L0 24
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vv7432
+R1
+!i10b 1
+!s100 LKNN0lhTInFNAd22X4gWe0
+IG;9allXFPTfLM59^MPK=F1
+R2
+R0
+R3
+R4
+R5
+L0 34
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

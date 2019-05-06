@@ -1,0 +1,45 @@
+module shiftregister (input KEY[3:0], SW[9:0], output [9:0]LEDR);
+	access u0 (KEY[0], SW[9], KEY[1], KEY[2] ,KEY[3], SW[7:0], LEDR[7:0]);
+endmodule
+
+module shifter(input left, right, loadLeft, d, loadn, Clock, reset, output reg q);
+	wire [2:0]w;
+	 always@(posedge Clock)
+		begin
+		if (loadLeft)
+			left = w[0];
+		else
+			right = w[0];
+		
+		if (loadn)
+			w[1] = w[0];
+		else
+			w[1]= d;
+			
+		if(Reset_n == 1'b0)
+			q<=0;
+		else
+			q<=d;
+
+	end
+endmodule
+
+module access (input Clock, reset, parallelLoadn, rotateRight, lsRight, DATA_IN[7:0], output [7:0]q);
+	wire w1;
+	reg w1;
+	always@(*)
+	begin
+		if(lsRight == 1'b1 && rotateRight == 1'b1 && parallelLoadn == 1'b1)
+			w1 = 1'b0;
+		else
+			w1 = DATA_IN[0];
+		end
+		shifter u1 (DATA_IN[1], DATA_IN[7], rotateRight, DATA_IN[0], parallelLoadn, Clock, reset, q[0]);
+		shifter u2 (DATA_IN[2], DATA_IN[0], rotateRight, DATA_IN[1], parallelLoadn, Clock, reset, q[1]);
+		shifter u3 (DATA_IN[3], DATA_IN[1], rotateRight, DATA_IN[2], parallelLoadn, Clock, reset, q[2]);
+		shifter u4 (DATA_IN[4], DATA_IN[2], rotateRight, DATA_IN[3], parallelLoadn, Clock, reset, q[3]);
+		shifter u5 (DATA_IN[5], DATA_IN[3], rotateRight, DATA_IN[4], parallelLoadn, Clock, reset, q[4]);
+		shifter u6 (DATA_IN[6], DATA_IN[4], rotateRight, DATA_IN[5], parallelLoadn, Clock, reset, q[5]);
+		shifter u7 (DATA_IN[7], DATA_IN[5], rotateRight, DATA_IN[6], parallelLoadn, Clock, reset, q[6]);
+		shifter u8 (w1, DATA_IN[6], rotateRight, DATA_IN[7], parallelLoadn, Clock, reset, q[7]);
+endmodule

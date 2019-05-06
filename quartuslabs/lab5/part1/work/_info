@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/lab5/part1
+vcounter
+Z1 !s110 1539898471
+!i10b 1
+!s100 9J;UdOlL0ScI>iP>l@8Z32
+IiDZg0E0R?dzOS47zR2OfL0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1539897989
+Z4 8counter.v
+Z5 Fcounter.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1539898470.000000
+Z8 !s107 counter.v|
+Z9 !s90 -reportprogress|300|counter.v|
+!i113 1
+Z10 tCvgOpt 0
+vdisplay
+R1
+!i10b 1
+!s100 >HQMC4omM8E?SdB;SZ[b`0
+IkR@`5JkYzN@a4gjeUGH]E0
+R2
+R0
+R3
+R4
+R5
+L0 44
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vflipflop
+R1
+!i10b 1
+!s100 hk:DZ>0<J^=L;aMKR44:Y0
+IAj>f_doSL7TVEPB0SWP6d3
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vtff
+!s110 1539895760
+!i10b 1
+!s100 93W@oQWK=f6Y@MkjFQ=fG1
+Ihg<;WkO@[F8AjKkcdYTHc2
+R2
+R0
+w1539895707
+R4
+R5
+L0 33
+R6
+r1
+!s85 0
+31
+!s108 1539895759.000000
+R8
+R9
+!i113 1
+R10

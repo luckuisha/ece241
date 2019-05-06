@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Nov 19 09:28:21 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : ball
+Top-level Entity Name : ball
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 253
+Total pins : 101
+Total virtual pins : 0
+Total block memory bits : 1,843,200
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

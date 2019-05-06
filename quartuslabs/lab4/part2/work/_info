@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/quartuslabs/lab4/part2
+vadder
+Z1 !s110 1539373627
+!i10b 1
+!s100 cZ_dQnI[^6I]o5I?1cR=J1
+IBAVcXda;dnP84Q9C^>U^R0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1539369161
+Z4 8register.v
+Z5 Fregister.v
+L0 47
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1539373626.000000
+Z8 !s107 register.v|
+Z9 !s90 -reportprogress|300|register.v|
+!i113 1
+Z10 tCvgOpt 0
+vALU
+R1
+!i10b 1
+!s100 j<<46n5kabMGk6HYO9Ycm1
+I;8Xk9PL10QoFF9>nmZ@RA2
+R2
+R0
+R3
+R4
+R5
+L0 15
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@a@l@u
+valuthing
+!s110 1539365896
+!i10b 1
+!s100 L]]@;7L<1na3g7[?fOZGH3
+IMOX0H08^S7^9Zk?ALB06I2
+R2
+R0
+w1539365890
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1539365896.000000
+R8
+R9
+!i113 1
+R10
+vdisplay
+R1
+!i10b 1
+!s100 elP:5eS[QSe`fN:7NAW2]0
+IY:[=9U4nRB;flb=YN<4_z1
+R2
+R0
+R3
+R4
+R5
+L0 55
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfulladder
+R1
+!i10b 1
+!s100 BS]6Gm:RQ6Ek>K6BTYlXe1
+Ig7:BWei:zMGmIfFFm76`f3
+R2
+R0
+R3
+R4
+R5
+L0 38
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vregister
+R1
+!i10b 1
+!s100 Gb]C;_=>`obf<ZcGlQL6P3
+In=hbRoPgD2lj;iW@`hI_>3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vregisterer
+R1
+!i10b 1
+!s100 N2XRELgF8O9>iea99:fU[3
+IbfkAD[Y>ka?;3N7mnhO3i3
+R2
+R0
+R3
+R4
+R5
+L0 66
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vregisterthing
+!s110 1539367268
+!i10b 1
+!s100 P:4Wf?f^a1eaRRURL?AX10
+I>0G9g0`Q>3XAD4W8[<JQJ0
+R2
+R0
+w1539367196
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1539367267.000000
+R8
+R9
+!i113 1
+R10
